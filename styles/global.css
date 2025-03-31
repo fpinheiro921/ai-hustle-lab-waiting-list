@@ -1,0 +1,163 @@
+/* styles/global.css */
+
+/* Modern, clean font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #e0e0e0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* No horizontal scroll */
+}
+
+/* Main container with a max width for nice centered content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Paragraph text */
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Features section */
+.features {
+  margin: 2rem 0;
+  text-align: center; /* Center the features block */
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; /* Center the list itself */
+  text-align: center;    /* Center the text within each li */
+}
+
+.features li {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Emerald-green accent */
+.discount-info {
+  color: #50C878;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+/* Form styling */
+form {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+input[type="email"] {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+input[type="email"]::placeholder {
+  color: #888;
+}
+
+/* Emerald-green button */
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #50C878;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3DA05D;
+}
+
+button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+/* Confirmation message in emerald green */
+.confirmation {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #50C878;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .logo {
+    width: 80px;
+  }
+}
